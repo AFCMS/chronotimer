@@ -1,7 +1,7 @@
 {
   "name": "chronotimer",
   "version": "0.0.1",
-  "description": "WIP",
+  "description": "free, open source and cross plateform timer app",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
