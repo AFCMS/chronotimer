@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Notification} = require('electron')
 const path = require('path')
 
 function createWindow () {
@@ -12,17 +12,21 @@ function createWindow () {
 
 	mainWindow.setMenu(null)
 
+	mainWindow.setIcon(path.join(__dirname, "icon.png"))
+
 	mainWindow.loadFile('index.html')
 }
 
-app.whenReady().then(() => {
+app.on('ready', function() {
 	createWindow()
 	app.on('activate', function () {
 		if (BrowserWindow.getAllWindows().length === 0) createWindow()
 	})
-}).then(() => {
-	//new Notification({ title: "Help", body: "chronotimer" }).onclick(() => console.log("msg")).show()
-	new Notification({ title: "Help", body: "chronotimer" }).show()
+	new Notification({
+		title: "Help",
+		body: "chronotimer",
+		icon: path.join(__dirname, "icon.png")
+	}).show()
 })
 
 app.on('window-all-closed', function () {
