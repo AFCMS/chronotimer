@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/AFCMS/chronotimer#readme",
   "devDependencies": {
-    "electron": "^16.0.6"
+    "electron": "^16.0.6",
+    "eslint": "^8.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }

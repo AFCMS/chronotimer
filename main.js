@@ -7,8 +7,10 @@ function createWindow () {
 		height: 600,
 		webPreferences: {
 			//preload: path.join(__dirname, 'preload.js')
+			devTools: true,
 		},
 	})
+	//mainWindow.openDevTools()
 
 	mainWindow.setMenu(null)
 
@@ -22,11 +24,11 @@ app.on('ready', function() {
 	app.on('activate', function () {
 		if (BrowserWindow.getAllWindows().length === 0) createWindow()
 	})
-	new Notification({
-		title: "Help",
-		body: "chronotimer",
-		icon: path.join(__dirname, "icon.png")
-	}).show()
+	//new Notification({
+	//	title: "Help",
+	//	body: "chronotimer",
+	//	icon: path.join(__dirname, "icon.png")
+	//}).show()
 })
 
 app.on('window-all-closed', function () {

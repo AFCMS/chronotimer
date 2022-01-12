@@ -5,11 +5,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
 	<title>Chronotime</title>
+	<script>require('bootstrap');</script>
   </head>
   <body>
-	<h1 color=black>Chronotime</h1>
+	<h1 id="demo" color=black>Chronotime</h1>
 
-	<p id="demo"></p>
+	<p id="main_timer"></p>
+	<form>
+		<button type="button" id="start_button">Start Timer</button> 
+	</form>
 
 	<script src="./renderer.js"></script>
   </body>

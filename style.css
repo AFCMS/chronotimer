@@ -1,8 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+
 body {
-	background-color: darkgrey;
+	background-color: #555555;
 }
 
 h1 {
-	color: black;
+	color: white;
 	font-size: 40pt;
+	background-color: gray;
+	font-family: sans-serif;
+	box-shadow: 0 1px 3px rgba(255, 0, 0, 1), 0 1px 2px rgba(8, 107, 255, 1);
+}
+
+#main_timer {
+	color: black;
+	font-size: 30pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+button {
+	vertical-align: middle;
+	font-size: 16pt;
+	background-color: gray;
+	color: lightgray;
+	border-color: gray;
+	border-radius: 8px;
+	padding: 10px 24px;
+}
+
+button:hover {
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.24), 0 4px 12px 0 rgba(0,0,0,0.19);
 }
