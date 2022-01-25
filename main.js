@@ -1,5 +1,5 @@
-const {app, BrowserWindow} = require('electron')
-const path = require('path')
+const {app, BrowserWindow, Tray} = require('electron')
+//const path = require('path')
 
 function createWindow () {
 	const mainWindow = new BrowserWindow({
@@ -10,11 +10,11 @@ function createWindow () {
 			devTools: true,
 		},
 	})
-	//mainWindow.openDevTools()
+	mainWindow.openDevTools()
 
 	mainWindow.setMenu(null)
 
-	mainWindow.setIcon(path.join(__dirname, "icon.png"))
+	mainWindow.setIcon("icon.png")
 
 	mainWindow.loadFile('index.html')
 }
@@ -29,6 +29,7 @@ app.on('ready', function() {
 	//	body: "chronotimer",
 	//	icon: path.join(__dirname, "icon.png")
 	//}).show()
+	new Tray("icon.png")
 })
 
 app.on('window-all-closed', function () {
