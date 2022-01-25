@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<link rel="stylesheet" href="./style.css">
-	<meta charset="UTF-8">
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-	<title>Chronotime</title>
-	<script>require('bootstrap');</script>
-  </head>
-  <body>
-	<h1 id="demo" color=black>Chronotime</h1>
-
-	<p id="main_timer"></p>
-	<form>
-		<button type="button" id="start_button">Start Timer</button> 
-	</form>
-
-	<script src="./renderer.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self'; style-src 'self' 'unsafe-inline'">
+		<title>Chronotime</title>
+		<link rel="stylesheet" href="./out_style.css">
+	</head>
+	<body>
+		<div class="flex items-center justify-between bg-blue-200 shadow-md p-3">
+			<div class="flex min-w-min">
+				<p class="text-blue-500 text-2xl font-bold">Chronotimer</p>
+			</div>
+		</div>
+		<!--<button class="bg-blue-400 font-bold p-1 hover:shadow-lg" type="button">Start Timer</button>-->
+	</body>
 </html>
