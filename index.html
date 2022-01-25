@@ -8,12 +8,22 @@
 	<script>require('bootstrap');</script>
   </head>
   <body>
-	<h1 id="demo" color=black>Chronotime</h1>
-
-	<p id="main_timer"></p>
-	<form>
-		<button type="button" id="start_button">Start Timer</button> 
-	</form>
+	<div class="number-grid">
+		<div class="time-remaining"></div>
+		<button data-number>1</button>
+		<button data-number>2</button>
+		<button data-number>3</button>
+		<button data-number>4</button>
+		<button data-number>5</button>
+		<button data-number>6</button>
+		<button data-number>7</button>
+		<button data-number>8</button>
+		<button data-number>9</button>
+		<button data-number>0</button>
+		<button data-number>00</button>
+		<button data-delete>DEL</button>
+		<button start class="start-button">=</button>
+	  </div>
 
 	<script src="./renderer.js"></script>
   </body>
